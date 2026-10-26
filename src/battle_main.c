@@ -363,6 +363,9 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_PIKE_QUEEN] = { _("管道皇后") },
     [TRAINER_CLASS_PYRAMID_KING] = { _("金字塔法老") },
     [TRAINER_CLASS_RS_PROTAG] = { _("宝可梦训练家") },
+    [TRAINER_CLASS_FRACTSIDUS] = { _("残星会") },
+    [TRAINER_CLASS_OVERSEER] = { _("残星会会监"), 10, BALL_ULTRA },
+    [TRAINER_CLASS_FRACTSIDUS_LEADER] = { _("残星会会长"), 20, BALL_MASTER },
 
     [TRAINER_CLASS_YOUNGSTER_FRLG] =       { _("短裤小子"), 4 },
     [TRAINER_CLASS_BUG_CATCHER_FRLG] =     { _("捕虫少年"), 3 },

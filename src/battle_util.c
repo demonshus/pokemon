@@ -2364,6 +2364,7 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
             battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_ATK, 1);
         break;
     case ABILITY_FLASH_FIRE:
+    case ABILITY_CORONA_SHELL:
         if (ctx->moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[ctx->battlerDef].status1 & STATUS1_FREEZE)))
             battleScript = AbsorbedByFlashFire(ctx);
         break;
@@ -3348,6 +3349,10 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility))
                 effect++;
             break;
+        case ABILITY_COS:
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility))
+                effect++;
+            break;    
         case ABILITY_SAND_STREAM:
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_SANDSTORM, gLastUsedAbility))
                 effect++;
@@ -3635,7 +3640,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                  && !gBattleMons[battler].volatiles.healBlockTimer)
                 {
                     BattleScriptCall(BattleScript_IceBodyHeal);
-                    SetHealAmount(battler, GetNonDynamaxMaxHP(battler) / 16);
+                    SetHealAmount(battler, GetNonDynamaxMaxHP(battler) / 4);
                     effect++;
                 }
                 break;
@@ -3653,7 +3658,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     BattleScriptCall(BattleScript_AbilityHpHeal);
                     effect++;
                 }
-                break;
+                break;   
             case ABILITY_HYDRATION:
                 if (IsBattlerWeatherAffected(GetBattlerHoldEffect(battler), GetWeather(), B_WEATHER_RAIN)
                  && gBattleMons[battler].status1 & STATUS1_ANY)
@@ -6941,6 +6946,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_SWARM:
+    case ABILITY_CORONA_SHELL:
         if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;

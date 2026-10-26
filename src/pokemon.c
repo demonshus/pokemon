@@ -156,7 +156,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 {
     [NATURE_HARDY] =
     {
-        .name = COMPOUND_STRING("勤奋"),
+        .name = COMPOUND_STRING("勤奋(无变化)"),
         .statUp = STAT_ATK,
         .statDown = STAT_ATK,
         .backAnim = 0,
@@ -168,7 +168,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_LONELY] =
     {
-        .name = COMPOUND_STRING("怕寂寞"),
+        .name = COMPOUND_STRING("孤独(+攻击-防御)"),
         .statUp = STAT_ATK,
         .statDown = STAT_DEF,
         .backAnim = 2,
@@ -180,7 +180,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_BRAVE] =
     {
-        .name = COMPOUND_STRING("勇敢"),
+        .name = COMPOUND_STRING("勇敢(+攻击-速度)"),
         .statUp = STAT_ATK,
         .statDown = STAT_SPEED,
         .backAnim = 0,
@@ -192,7 +192,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_ADAMANT] =
     {
-        .name = COMPOUND_STRING("固执"),
+        .name = COMPOUND_STRING("固执(+攻击-特攻)"),
         .statUp = STAT_ATK,
         .statDown = STAT_SPATK,
         .backAnim = 0,
@@ -204,7 +204,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_NAUGHTY] =
     {
-        .name = COMPOUND_STRING("顽皮"),
+        .name = COMPOUND_STRING("顽皮(+攻击-特防)"),
         .statUp = STAT_ATK,
         .statDown = STAT_SPDEF,
         .backAnim = 0,
@@ -216,7 +216,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_BOLD] =
     {
-        .name = COMPOUND_STRING("大胆"),
+        .name = COMPOUND_STRING("大胆(+防御-攻击)"),
         .statUp = STAT_DEF,
         .statDown = STAT_ATK,
         .backAnim = 1,
@@ -228,7 +228,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_DOCILE] =
     {
-        .name = COMPOUND_STRING("坦率"),
+        .name = COMPOUND_STRING("坦率(无变化)"),
         .statUp = STAT_DEF,
         .statDown = STAT_DEF,
         .backAnim = 1,
@@ -240,7 +240,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_RELAXED] =
     {
-        .name = COMPOUND_STRING("悠闲"),
+        .name = COMPOUND_STRING("悠闲(+防御-速度)"),
         .statUp = STAT_DEF,
         .statDown = STAT_SPEED,
         .backAnim = 1,
@@ -252,7 +252,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_IMPISH] =
     {
-        .name = COMPOUND_STRING("淘气"),
+        .name = COMPOUND_STRING("淘气(+防御-特攻)"),
         .statUp = STAT_DEF,
         .statDown = STAT_SPATK,
         .backAnim = 0,
@@ -264,7 +264,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_LAX] =
     {
-        .name = COMPOUND_STRING("乐天"),
+        .name = COMPOUND_STRING("乐天(+防御-特防)"),
         .statUp = STAT_DEF,
         .statDown = STAT_SPDEF,
         .backAnim = 1,
@@ -276,7 +276,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_TIMID] =
     {
-        .name = COMPOUND_STRING("胆小"),
+        .name = COMPOUND_STRING("胆小(+速度-攻击)"),
         .statUp = STAT_SPEED,
         .statDown = STAT_ATK,
         .backAnim = 2,
@@ -288,7 +288,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_HASTY] =
     {
-        .name = COMPOUND_STRING("急躁"),
+        .name = COMPOUND_STRING("急躁(+速度-防御)"),
         .statUp = STAT_SPEED,
         .statDown = STAT_DEF,
         .backAnim = 0,
@@ -300,7 +300,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_SERIOUS] =
     {
-        .name = COMPOUND_STRING("认真"),
+        .name = COMPOUND_STRING("认真(无变化)"),
         .statUp = STAT_SPEED,
         .statDown = STAT_SPEED,
         .backAnim = 1,
@@ -312,7 +312,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_JOLLY] =
     {
-        .name = COMPOUND_STRING("爽朗"),
+        .name = COMPOUND_STRING("开朗(+速度-特攻)"),
         .statUp = STAT_SPEED,
         .statDown = STAT_SPATK,
         .backAnim = 0,
@@ -324,7 +324,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_NAIVE] =
     {
-        .name = COMPOUND_STRING("天真"),
+        .name = COMPOUND_STRING("天真(+速度-特防)"),
         .statUp = STAT_SPEED,
         .statDown = STAT_SPDEF,
         .backAnim = 0,
@@ -336,7 +336,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_MODEST] =
     {
-        .name = COMPOUND_STRING("内敛"),
+        .name = COMPOUND_STRING("保守(+特攻-攻击)"),
         .statUp = STAT_SPATK,
         .statDown = STAT_ATK,
         .backAnim = 2,
@@ -348,7 +348,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_MILD] =
     {
-        .name = COMPOUND_STRING("慢吞吞"),
+        .name = COMPOUND_STRING("慢吞吞(+特攻-防御)"),
         .statUp = STAT_SPATK,
         .statDown = STAT_DEF,
         .backAnim = 2,
@@ -360,7 +360,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_QUIET] =
     {
-        .name = COMPOUND_STRING("冷静"),
+        .name = COMPOUND_STRING("冷静(+特攻-速度)"),
         .statUp = STAT_SPATK,
         .statDown = STAT_SPEED,
         .backAnim = 2,
@@ -372,7 +372,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_BASHFUL] =
     {
-        .name = COMPOUND_STRING("害羞"),
+        .name = COMPOUND_STRING("害羞(无变化)"),
         .statUp = STAT_SPATK,
         .statDown = STAT_SPATK,
         .backAnim = 2,
@@ -384,7 +384,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_RASH] =
     {
-        .name = COMPOUND_STRING("马虎"),
+        .name = COMPOUND_STRING("马虎(+特攻-特防)"),
         .statUp = STAT_SPATK,
         .statDown = STAT_SPDEF,
         .backAnim = 1,
@@ -396,7 +396,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_CALM] =
     {
-        .name = COMPOUND_STRING("温和"),
+        .name = COMPOUND_STRING("温和(+特防-攻击)"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_ATK,
         .backAnim = 1,
@@ -408,7 +408,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_GENTLE] =
     {
-        .name = COMPOUND_STRING("温顺"),
+        .name = COMPOUND_STRING("温顺(+特防-防御)"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_DEF,
         .backAnim = 2,
@@ -420,7 +420,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_SASSY] =
     {
-        .name = COMPOUND_STRING("自大"),
+        .name = COMPOUND_STRING("自大(+特防-速度)"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_SPEED,
         .backAnim = 1,
@@ -432,7 +432,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_CAREFUL] =
     {
-        .name = COMPOUND_STRING("慎重"),
+        .name = COMPOUND_STRING("慎重(+特防-特攻)"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_SPATK,
         .backAnim = 2,
@@ -444,7 +444,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_QUIRKY] =
     {
-        .name = COMPOUND_STRING("浮躁"),
+        .name = COMPOUND_STRING("浮躁(无变化)"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_SPDEF,
         .backAnim = 1,

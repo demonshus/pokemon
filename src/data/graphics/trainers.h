@@ -223,6 +223,9 @@ const u16 gTrainerPalette_Brendan[] = INCGFX_U16("graphics/trainers/palettes/bre
 const u32 gTrainerFrontPic_May[] = INCGFX_U32("graphics/trainers/front_pics/may.png", ".4bpp.smol");
 const u16 gTrainerPalette_May[] = INCGFX_U16("graphics/trainers/palettes/may.pal", ".gbapal");
 
+const u32 gTrainerFrontPic_Fuluoluo[] = INCGFX_U32("graphics/trainers/front_pics/fuluoluo.png", ".4bpp.smol");
+const u16 gTrainerPalette_Fuluoluo[] = INCGFX_U16("graphics/trainers/palettes/fuluoluo.pal", ".gbapal");
+
 const u32 gTrainerFrontPic_BugCatcher[] = INCGFX_U32("graphics/trainers/front_pics/bug_catcher.png", ".4bpp.smol");
 const u16 gTrainerPalette_BugCatcher[] = INCGFX_U16("graphics/trainers/front_pics/bug_catcher.png", ".gbapal");
 
@@ -1225,5 +1228,9 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_PAINTER_FRLG] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
+    },
+    [TRAINER_PIC_FULUOLUO] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Fuluoluo, gTrainerPalette_Fuluoluo),
     },
 };

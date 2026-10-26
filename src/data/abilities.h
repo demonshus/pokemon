@@ -2474,4 +2474,19 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("波导防护"),
         .description = COMPOUND_STRING("受接触类招式的伤害减半"),
     },
+
+    [ABILITY_CORONA_SHELL] =
+    {
+        .name = _("日冕躯壳"),
+        .description = COMPOUND_STRING("免疫强化火系残血强化虫系"),
+        .aiRating = 6,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_COS] =
+    {
+        .name = _("雨神"),
+        .description = COMPOUND_STRING("开场下雨并缓慢回血"),
+        .aiRating = 7,
+    },
 };

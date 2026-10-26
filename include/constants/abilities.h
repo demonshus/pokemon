@@ -341,6 +341,9 @@ enum __attribute__((packed)) Ability
     ABILITY_317 = 317,
     ABILITY_SPICY_SPRAY = 318,
     ABILITY_AURA_GUARD = 319,
+    //自定义特性
+    ABILITY_CORONA_SHELL = 320,
+    ABILITY_COS = 321,
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

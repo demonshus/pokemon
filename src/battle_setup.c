@@ -916,6 +916,11 @@ enum BattleTransition GetTrainerBattleTransition(void)
     if (DoesTrainerHaveMugshot(trainerId))
         return B_TRANSITION_MUGSHOT;
 
+    if (trainerClass == TRAINER_CLASS_FRACTSIDUS
+        || trainerClass == TRAINER_CLASS_OVERSEER
+        || trainerClass == TRAINER_CLASS_FRACTSIDUS_LEADER)
+        return B_TRANSITION_CANXINGHUI;
+
     if (trainerClass == TRAINER_CLASS_TEAM_MAGMA
         || trainerClass == TRAINER_CLASS_MAGMA_LEADER
         || trainerClass == TRAINER_CLASS_MAGMA_ADMIN)

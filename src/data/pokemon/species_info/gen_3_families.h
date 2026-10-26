@@ -9040,6 +9040,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_RESONANCE_STONE, SPECIES_ESCAVALIER}),
     },
 #endif //P_FAMILY_FEEBAS
 

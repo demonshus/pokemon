@@ -714,6 +714,8 @@ extern const u32 gItemIcon_DuskStone[];
 extern const u16 gItemIconPalette_DuskStone[];
 extern const u32 gItemIcon_DawnStone[];
 extern const u16 gItemIconPalette_DawnStone[];
+extern const u32 gItemIcon_Resonance_stone[];
+extern const u16 gItemIconPalette_Resonance_stone[];
 extern const u32 gItemIcon_SweetApple[];
 extern const u16 gItemIconPalette_SweetApple[];
 extern const u32 gItemIcon_TartApple[];

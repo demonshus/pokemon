@@ -4086,6 +4086,23 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_DawnStone,
     },
 
+    [ITEM_RESONANCE_STONE] =
+    {
+        .name = ITEM_NAME("共鸣石"),
+        .price = 50000,
+        .description = COMPOUND_STRING(
+			"能与特定宝可梦\n"
+			"共鸣的神奇石头。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Resonance_stone,
+        .iconPalette = gItemIconPalette_Resonance_stone,
+    },
+
     [ITEM_SWEET_APPLE] =
     {
         .name = ITEM_NAME("甜甜苹果"),
